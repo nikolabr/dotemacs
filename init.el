@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(wombat))
  '(doc-view-continuous t)
- )
+)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -39,8 +39,17 @@
   (setq lsp-keymap-prefix "C-c l")
   )
 
-(setq package-selected-packages '(lsp-mode yasnippet lsp-treemacs helm-lsp
-    projectile hydra flycheck company avy which-key helm-xref dap-mode magit))
+(setq package-selected-packages
+      '(
+	lsp-mode
+	yasnippet lsp-treemacs helm-lsp
+	projectile hydra flycheck company avy
+	which-key helm-xref
+	dap-mode
+	magit
+	mozc
+	)
+      )
 
 (when (cl-find-if-not #'package-installed-p package-selected-packages)
   (package-refresh-contents)
@@ -66,3 +75,4 @@
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 (desktop-save-mode 1)
+
