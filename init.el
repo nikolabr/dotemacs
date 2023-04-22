@@ -16,8 +16,8 @@
 (tooltip-mode -1)
 (tool-bar-mode -1)
 
-(display-line-numbers-mode)
 (setq display-line-numbers 'relative)
+(display-line-numbers-mode)
 
 (require 'package)
 (setq package-archives '(("melpa" . "http://melpa.org/packages/")
@@ -33,6 +33,7 @@
 (vs-dark-theme)
 
 (use-package helm)
+(use-package helm-xref)
 (require 'helm-xref)
 (helm-mode)
 (define-key global-map [remap find-file] #'helm-find-files)
