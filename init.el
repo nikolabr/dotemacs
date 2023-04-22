@@ -3,8 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(wombat))
- '(doc-view-continuous t)
+ 
 )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -29,6 +28,9 @@
 
 (require 'use-package)
 (setq use-package-always-ensure t)
+
+(use-package vs-dark-theme)
+(vs-dark-theme)
 
 (use-package helm)
 (require 'helm-xref)
