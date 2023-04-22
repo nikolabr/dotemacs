@@ -63,5 +63,6 @@
   (yas-global-mode))
 
 (projectile-mode)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 (desktop-save-mode 1)
