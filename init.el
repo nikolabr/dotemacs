@@ -15,6 +15,10 @@
 
 (scroll-bar-mode -1)
 (tooltip-mode -1)
+(tool-bar-mode -1)
+
+(display-line-numbers-mode)
+(setq display-line-numbers 'relative)
 
 (require 'package)
 (setq package-archives '(("melpa" . "http://melpa.org/packages/")
