@@ -62,7 +62,6 @@
   (require 'dap-cpptools)
   (yas-global-mode))
 
-(magit-status)
-(magit-get-current-branch)
+(projectile-mode)
 
 (desktop-save-mode 1)
