@@ -17,7 +17,7 @@
 (tool-bar-mode -1)
 
 (setq display-line-numbers 'relative)
-(display-line-numbers-mode)
+(global-display-line-numbers-mode)
 
 (require 'package)
 (setq package-archives '(("melpa" . "http://melpa.org/packages/")
