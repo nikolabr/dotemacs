@@ -32,6 +32,8 @@
 (use-package vs-dark-theme)
 (vs-dark-theme)
 
+(set-frame-font "Source Code Pro 11" nil t)
+
 (use-package helm)
 (use-package helm-xref)
 (require 'helm-xref)
